@@ -10,7 +10,7 @@
 
 #import <Cordova/CDVPlugin.h>
 
-@interface Echo : CDVPlugin
+@interface CDVSample : CDVPlugin
 
 - (void)echo:(CDVInvokedUrlCommand*)command;
 
