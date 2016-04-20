@@ -3,3 +3,5 @@ window.sample = function(str, callback) {
         callback('Nothing to sample.');
     }, "Sample", "echo", [str]);
 };
+
+module.exports = window.sample;
