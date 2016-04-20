@@ -1,0 +1,20 @@
+<plugin xmlns="" id="cordova-plugin-sample" version="0.0.1">
+	<name>Sample Plugin</name>
+	<description>Just a sample</description>
+	<author>Akshay Shinde</author>
+	<keywords>foo,bar</keywords>
+	<license>Apache 2.0 License</license>
+	<js-module src="www/sample.js" name="Sample">
+		<clobbers target="window.sample" />
+	</js-module>
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+        	<feature name="Sample">
+            	<param name="ios-package" value="CDVSample"/>
+        	    <param name="onload" value="true" />
+        	</feature>
+    	</config-file>
+		<source-file src="src/ios/CDVSample.m" />
+		<header-file src="src/ios/CDVSample.h" />
+	</platform>
+</plugin>
